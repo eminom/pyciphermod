@@ -1,5 +1,6 @@
 
 import sys
+import os
 from cipherfunc import *
 
 if '__main__' == __name__:
@@ -9,4 +10,4 @@ if '__main__' == __name__:
     path, key, sig = sys.argv[1], sys.argv[2], sys.argv[3]
     #print("Decrypting %s with (%s,%s)" % (path, key, sig))
     DecryptFileInplace(path, key, sig)
-    print("decryption done.")
+    print("%s decrypted." % (os.path.basename(path)))
