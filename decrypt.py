@@ -9,4 +9,4 @@ if '__main__' == __name__:
     path, key, sig = sys.argv[1], sys.argv[2], sys.argv[3]
     #print("Decrypting %s with (%s,%s)" % (path, key, sig))
     DecryptFileInplace(path, key, sig)
-    print("done")
+    print("decryption done.")
