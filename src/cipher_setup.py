@@ -6,7 +6,8 @@ def genModule():
 	if 'Windows' != system():
 		extra_ca = []
 	module1 = Extension('CipherMod',
-		sources = ['py3ciphermod.cc'
+		sources = ['py3ciphermod.cc',
+                     'xxtea.cpp'
                      ],
               #include_dirs= ["C:/Boost/include/boost-1_57"],
               #      define_macros = [("WIN32",None),
