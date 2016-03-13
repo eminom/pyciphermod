@@ -4,7 +4,7 @@
 //#include "structmember.h"
 #include "Python.h"
 #include "py3ciphermod.h"
-#include "cross.h"
+#include "../cross.h"
 #include "xxtea.h"
 
 #define CipherModFunc(a) _CipherModFunc__##a
