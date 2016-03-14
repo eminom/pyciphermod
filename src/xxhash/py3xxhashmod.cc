@@ -18,8 +18,8 @@ static PyObject *XxhashModFunc(CompilingDate)(PyObject*) {
 
 static PyObject* XxhashModFunc(DoXxhash)(PyObject *self, PyObject *args) {
     PyObject* buffer_in = NULL;
-    int key = 0;
-    if (!PyArg_ParseTuple(args, "Oi", &buffer_in, &key)) {
+    unsigned int key = 0;
+    if (!PyArg_ParseTuple(args, "OI", &buffer_in, &key)) {
         PyErr_SetString(PyExc_TypeError, "Need a bytes object(buffer) and a key(string)");
         return NULL;
     }
