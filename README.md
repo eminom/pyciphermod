@@ -1,4 +1,4 @@
-# How to configure this module.
+# How to configure this module.(Again)
 
 #! /usr/local/bin/ruby
 
