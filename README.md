@@ -1,3 +1,5 @@
+# How to configure this module.
+
 #! /usr/local/bin/ruby
 
 cur_path = File.dirname(__FILE__.encode("UTF-8"))
